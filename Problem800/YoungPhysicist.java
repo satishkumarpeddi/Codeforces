@@ -1,6 +1,6 @@
 package Problem800;
 import java.io.*;
-import java.util.*;
+// import java.util.*;
 public class YoungPhysicist {
     public static void main(String[] args)throws IOException{
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
