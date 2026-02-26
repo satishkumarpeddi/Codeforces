@@ -5,9 +5,16 @@ public class NearlyLuckyNumber {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         String number = bf.readLine().trim();
         boolean flag = true;
-        for(int i=0;i<number.length();i++){
-            // System.out.println(number.charAt(i));
-            if(number.charAt(i)!='4'&&number.charAt(i)!='7'){ flag=false; break;}
+        int count=0;
+        for(int i=0;i<number.length();i++){ 
+            if(number.charAt(i)=='4'&&number.charAt(i)=='7'){count++;}
+        }
+        String countArr = String.valueOf(count);
+        for(int i=0;i<countArr.length();i++){
+            if(countArr.charAt(i)!='4'&&countArr.charAt(i)!='7'){
+                flag=false;
+                break;
+            }
         }
         System.out.println(flag?"YES":"NO");
     }
